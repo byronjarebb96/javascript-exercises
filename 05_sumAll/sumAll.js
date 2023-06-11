@@ -10,7 +10,6 @@ const sumAll = function(...sumThese) {
     let sum = 0;     // Initalize integer for variable
     for(i=sumThese[0]; i<=sumThese[1]; i++)    // Add all numbers between sumThese
     {
-        if (i < 0 && !Number.isInteger(i))
         sum+=i;
     }
     return sum;
