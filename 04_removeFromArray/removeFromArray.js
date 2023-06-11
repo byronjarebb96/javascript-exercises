@@ -1,22 +1,22 @@
-const removeFromArray = function(array, ...remove) {
-    remove.forEach(element => {
-        if (remove > 1)
-        {
-            removeElements = array.indexOf(remove);
-            array.splice(removeElements,1);
-        }
-    })
-    return array
-        /*
-    });
-
-    if (elements > -1)
+const removeFromArray = function(array, ...removeThese) {
+    for (removalItem of removeThese)
     {
-        removeElements = array.indexOf(elements);
-        array.splice(removeElements,1);
-        return array
-    }*/
-}  
+        if (array.includes(removalItem)==1)
+        {
+            removalIndex = array.indexOf(removalItem);
+            array.splice(removalIndex,1);
+        }
+    }
+    return array;
+    /*
+    if (removeThis > 1)
+    {
+        removalIndex = array.indexOf(removeThis);
+        array.splice(removalIndex, 1);
+    }
+    return array;
+    */
+};
 
 // Do not edit below this line
 module.exports = removeFromArray;
