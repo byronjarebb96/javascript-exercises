@@ -1,13 +1,15 @@
-const add = function() {
-	
+const add = function(a,b) {
+	return a + b
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	return (a - b)
 };
 
-const sum = function() {
-	
+const sum = function(sumThese) {
+  let runningTotal = Number(0);
+  sumThese.forEach((number)=>{runningTotal += number})
+  return runningTotal;
 };
 
 const multiply = function() {
