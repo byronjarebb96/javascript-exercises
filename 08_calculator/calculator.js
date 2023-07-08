@@ -12,16 +12,20 @@ const sum = function(sumThese) {
   return runningTotal;
 };
 
-const multiply = function() {
-
+const multiply = function(...multiplyThese) {
+  return multiplyThese.reduce((accumulator, currentValue)=>accumulator*currentValue);
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	return a**b;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let runningTotal = 1;
+  if (number === 0){ return 1;}
+  for (let i = 1; i<=number; i++)
+    runningTotal = runningTotal*i;
+  return runningTotal;
 };
 
 // Do not edit below this line
